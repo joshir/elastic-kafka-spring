@@ -9,10 +9,17 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.joshi.robin.elastic.kafka.spring</groupId>
-	<artifactId>orders-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<modules>
+		<module>orders-stream</module>
+		<module>orders-configs</module>
+		<module>orders-feed</module>
+		<module>orders-query</module>
+		<module>orders-analytics-dump</module>
+	</modules>
+	<artifactId>order-processor</artifactId>
 	<packaging>pom</packaging>
-	<name>orders-app</name>
+	<name>elastic-kafka-spring</name>
 
 	<properties>
 		<java.version>11</java.version>

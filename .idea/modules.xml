@@ -3,6 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/elastic-kafka-spring.iml" filepath="$PROJECT_DIR$/.idea/elastic-kafka-spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/orders-analytics-dump.iml" filepath="$PROJECT_DIR$/orders-analytics-dump.iml" />
+      <module fileurl="file://$PROJECT_DIR$/orders-configs.iml" filepath="$PROJECT_DIR$/orders-configs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/orders-feed.iml" filepath="$PROJECT_DIR$/orders-feed.iml" />
+      <module fileurl="file://$PROJECT_DIR$/orders-query.iml" filepath="$PROJECT_DIR$/orders-query.iml" />
+      <module fileurl="file://$PROJECT_DIR$/orders-stream.iml" filepath="$PROJECT_DIR$/orders-stream.iml" />
     </modules>
   </component>
 </project>
