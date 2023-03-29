@@ -5,16 +5,43 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.joshi.robin.elastic.kafka.spring</groupId>
-        <artifactId>order-processor</artifactId>
+        <artifactId>elastic-kafka-spring</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
     <artifactId>commons</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>kafka-models</module>
+        <module>kafka-producer</module>
+        <module>kafka-consumer</module>
+        <module>kafka-config</module>
+    </modules>
 
-    <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.kafka</groupId>
+                <artifactId>spring-kafka</artifactId>
+                <version>${spring-kafka.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.confluent</groupId>
+                <artifactId>kafka-avro-serializer</artifactId>
+                <version>${kafka-avro-serializer.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.avro</groupId>
+                <artifactId>avro</artifactId>
+                <version>${avro.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
+    <repositories>
+        <repository>
+            <id>confluent</id>
+            <url>https://packages.confluent.io/maven</url>
+        </repository>
+    </repositories>
 </project>
