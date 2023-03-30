@@ -10,4 +10,23 @@
     </parent>
 
     <artifactId>kafka-producer</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>io.confluent</groupId>
+            <artifactId>kafka-avro-serializer</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.joshi.robin.elastic.kafka.spring</groupId>
+            <artifactId>kafka-config</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.joshi.robin.elastic.kafka.spring</groupId>
+            <artifactId>kafka-models</artifactId>
+        </dependency>
+    </dependencies>
 </project>

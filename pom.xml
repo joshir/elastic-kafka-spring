@@ -12,11 +12,11 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<modules>
 		<module>orders-stream</module>
-		<module>orders-configs</module>
 		<module>orders-feed</module>
 		<module>orders-query</module>
 		<module>orders-analytics-dump</module>
 		<module>commons</module>
+		<module>orders-config-server</module>
 	</modules>
 	<artifactId>elastic-kafka-spring</artifactId>
 	<packaging>pom</packaging>
