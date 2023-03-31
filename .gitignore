@@ -3,6 +3,7 @@
 .idea
 .idea/
 target/
+logs/
 
 # File-based project format
 *.iws
