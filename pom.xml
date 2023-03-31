@@ -10,6 +10,7 @@
 	</parent>
 	<groupId>com.joshi.robin.elastic.kafka.spring</groupId>
 	<version>0.0.1-SNAPSHOT</version>
+
 	<modules>
 		<module>orders-stream</module>
 		<module>orders-feed</module>
@@ -18,13 +19,15 @@
 		<module>commons</module>
 		<module>orders-config-server</module>
 	</modules>
+
 	<artifactId>elastic-kafka-spring</artifactId>
 	<packaging>pom</packaging>
 	<name>elastic-kafka-spring</name>
 
 	<properties>
 		<java.version>11</java.version>
-		<spring-boot.version>2.7.10</spring-boot.version>
+		<spring-boot.version>2.7.5</spring-boot.version>
+		<spring-cloud-config.version>3.1.4</spring-cloud-config.version>
 		<maven-compiler-plugin.version>3.9.1</maven-compiler-plugin.version>
 		<maven-compiler-language-level>11</maven-compiler-language-level>
 		<spring-kafka.version>2.8.6</spring-kafka.version>
@@ -47,12 +50,27 @@
 				<scope>test</scope>
 			</dependency>
 			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-config-server</artifactId>
+				<version>${spring-cloud-config.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>2021.0.4</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-config</artifactId>
+				<version>${spring-cloud-config.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.projectlombok</groupId>
 				<artifactId>lombok</artifactId>
 				<version>1.18.24</version>
 			</dependency>
-
-
 			<dependency>
 				<groupId>com.joshi.robin.elastic.kafka.spring</groupId>
 				<artifactId>kafka-models</artifactId>
