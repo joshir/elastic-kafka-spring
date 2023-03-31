@@ -7,13 +7,14 @@ logging:
     org.spring.framework.cloud.config: DEBUG
 
 spring:
-  profile: native
   application:
     name: ordersconfigserver
   cloud:
     config:
       server:
         git:
-          uri: file://Users/robinjoshi/Desktop/Dev/elastic-kafka-spring/elastic-kafka-spring/orders-configs
+          uri: https://github.com/joshir/elastic-kafka-spring-config-repo.git
+          username: joshir
+          password: ${GITHUB_TOKEN}
           clone-on-start: true
     fail-fast: true
