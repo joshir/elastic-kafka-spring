@@ -1,0 +1,19 @@
+server:
+  port: 8888
+
+logging:
+  level:
+    ROOT: INFO
+    org.spring.framework.cloud.config: DEBUG
+
+spring:
+  profile: native
+  application:
+    name: ordersconfigserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: file://Users/robinjoshi/Desktop/Dev/elastic-kafka-spring/elastic-kafka-spring/orders-configs
+          clone-on-start: true
+    fail-fast: true
