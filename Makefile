@@ -5,7 +5,7 @@ FILES := $(shell docker ps -aq)
 local :
 	mvn clean package -Dmaven.test.skip
 	echo "Starting docker compose ..."
-	docker-compose -f infra/base.yml -f infra/kafka.yml -f infra/elastic-search.yml up
+	docker-compose up
 
 stop-all :
 	docker stop $(FILES)
