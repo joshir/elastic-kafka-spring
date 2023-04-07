@@ -4,6 +4,7 @@ Demonstration of CQRS using Apache Kafka as an event-store (the C in CQRS), elas
 ![High Level Architecture](./elastic-kafka-spring.drawio.png "architecture")
 
 # elastic-kafka-spring
+You will need `docker-compose` and `make` to run the command to run kafka and elasticsearch in containers. 
 ```
 make local # build local target
 ```
