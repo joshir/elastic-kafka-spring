@@ -18,7 +18,8 @@
 		<module>orders-analytics-dump</module>
 		<module>commons</module>
 		<module>orders-config-server</module>
-	</modules>
+        <module>commons/elastic-config</module>
+    </modules>
 
 	<artifactId>elastic-kafka-spring</artifactId>
 	<packaging>pom</packaging>
