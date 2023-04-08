@@ -4,8 +4,7 @@ FILES := $(shell docker ps -aq)
 
 local :
 	mvn clean package -Dmaven.test.skip
-	echo "Starting docker compose ..."
-	docker-compose up
+	$(MAKE) -C infra local
 
 stop-all :
 	docker stop $(FILES)
