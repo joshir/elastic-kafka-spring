@@ -9,7 +9,7 @@ From wikipedia:
 
 You can find guidance on how `elasticsearch` stores and indexes documents [here.](https://www.elastic.co/guide/en/elasticsearch/reference/current/explicit-mapping.html) 
 
-The official Java client for `elasticseach` can be found [here.](https://github.com/elastic/elasticsearch-java/) The documentation for this client is hosted [here.](https://www.elastic.co/guide/en/elasticsearch/client/java-api-client/current/index.html) 
+The official Java client for `elasticsearch` can be found [here.](https://github.com/elastic/elasticsearch-java/) The documentation for this client is hosted [here.](https://www.elastic.co/guide/en/elasticsearch/client/java-api-client/current/index.html) 
 
 # Apache Kafka
 From the Apache Foundation:
@@ -18,17 +18,13 @@ From the Apache Foundation:
 
 The Kafka platform is built on the following core foundations: 
 
-1. High Throughput
- * Deliver messages at network limited throughput using a cluster of machines with latencies as low as 2ms.
+1. *High Throughput*:  Deliver messages at network limited throughput using a cluster of machines with latencies as low as 2ms.
 
-2. Scalable
- * Scale production clusters up to a thousand brokers, trillions of messages per day, petabytes of data, hundreds of thousands of partitions. Elastically expand and contract storage and processing.
+2. *Scalable*: Scale production clusters up to a thousand brokers, trillions of messages per day, petabytes of data, hundreds of thousands of partitions. Elastically expand and contract storage and processing.
  
-3. Permanent Store
- * Store streams of data safely in a distributed, durable, fault-tolerant cluster.
+3. *Permanent Store*: Store streams of data safely in a distributed, durable, fault-tolerant cluster.
 
-4. Hight Availability
- * Stretch clusters efficiently over availability zones or connect separate clusters across geographic regions.
+4. *High Availability*: Stretch clusters efficiently over availability zones or connect separate clusters across geographic regions.
 
 We will use `docker-compose` file from *Confluent* Kafka. Find it [here.](https://github.com/confluentinc/cp-all-in-one/blob/7.3.0-post/cp-all-in-one/docker-compose.yml) 
 
